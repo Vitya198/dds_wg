@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+The style file: plain.bst
+Database file #1: src/mybibfile.bib
+Warning--to sort, need author or key in dac_fig7
+Warning--to sort, need author or key in gajski_fig8
+Warning--to sort, need author or key in fig15_wm8731
+Warning--empty author in dac_fig7
+Warning--empty title in dac_fig7
+Warning--empty journal in dac_fig7
+Warning--empty year in dac_fig7
+Warning--empty author in gajski_fig8
+Warning--empty title in gajski_fig8
+Warning--empty journal in gajski_fig8
+Warning--empty year in gajski_fig8
+Warning--empty author in fig15_wm8731
+Warning--empty title in fig15_wm8731
+Warning--empty journal in fig15_wm8731
+Warning--empty year in fig15_wm8731
+Warning--empty year in fig17_i2s
+You've used 11 entries,
+            2118 wiz_defined-function locations,
+            539 strings with 4972 characters,
+and the built_in function-call counts, 2749 in all, are:
+= -- 272
+> -- 65
+< -- 3
++ -- 29
+- -- 18
+* -- 133
+:= -- 405
+add.period$ -- 28
+call.type$ -- 11
+change.case$ -- 39
+chr.to.int$ -- 0
+cite$ -- 27
+duplicate$ -- 163
+empty$ -- 231
+format.name$ -- 18
+if$ -- 607
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 10
+newline$ -- 53
+num.names$ -- 16
+pop$ -- 72
+preamble$ -- 1
+purify$ -- 31
+quote$ -- 0
+skip$ -- 147
+stack$ -- 0
+substring$ -- 105
+swap$ -- 61
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 44
+warning$ -- 16
+while$ -- 19
+width$ -- 13
+write$ -- 98
+(There were 16 warnings)

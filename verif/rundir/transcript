@@ -1,0 +1,28 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# vsim +nowarnTSCALE -Lf test_lib -Lf modules_lib -gui -t 1ps -novopt test_lib.dig_core_tb 
+# Loading sv_std.std
+# Loading test_lib.dig_core_tb
+# Loading modules_lib.uart_transceiver
+# Loading modules_lib.dds_dig_core
+# Loading modules_lib.protocol_decoder
+# Loading modules_lib.reg_file
+# Loading modules_lib.reg_entity
+# Loading modules_lib.reg_array_entity
+# Loading modules_lib.reg_shadow_entity
+# Loading modules_lib.nco
+# Loading modules_lib.sinus_lut
+# Loading modules_lib.dac
+# ** Warning: (vsim-3015) ../tests/dig_core_tb.sv(57): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'debug_o_2'. The port definition is at: ../../rtl/dds_dig_core.sv(15).
+# 
+#         Region: /dig_core_tb/dut
+add wave -position insertpoint sim:/dig_core_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: vikto  Hostname: DESKTOP-0TH4I1I  ProcessID: 4248
+# 
+#           Attempting to use alternate WLF file "./wlft7rfq74".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft7rfq74
+# 
+run 40ms
