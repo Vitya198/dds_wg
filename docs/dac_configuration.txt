@@ -1,0 +1,77 @@
+DIGITAL AUDIO INTERFACE FORMAT: addr=0000111; data=00010001
+
+	Audio data format select:
+		- FORMAT[1:0]=01  -> MSB-first
+	Input Audio Data Bit Length Select:
+		- IWL[1:0]=00 -> 16 bit A
+	DACLRC phase control(right or left or i2s mode):	
+		- LRP=1 ->Right Channel DAC data when DACLRC high
+	DAC Left Right Clock Swap:
+		- LRSWAP=0 ->0 = Right Channel DAC Data Right
+	Master Slave Mode Control:
+		- MS=0 ->slave mode
+	Bit clock invert:
+		- BCLKINV=0 -> dont invert bclk
+
+ANALOGUE AUDIO PATH CONTROL: addr=0000100; data=00010010
+	Microphone Input Level Boost:
+		-MICBOOST=0
+	MIc Input Mute to ADC:
+		-MUTEMIC=1
+	Microphone/Line Input Select to ADC:
+		-INSEL=0
+	Bypass Switch:
+		-BYPASS=0
+	DAC Select:
+		-DACSEL=1
+	Side Tone Switch:
+		-SIDETONE=0
+	Side Tone Attenuation:
+		-SIDEATT[1:0]=00 -6dB
+
+
+SAMPLING CONTROL: addr=0001000;  data=00011101
+
+	Mode Select: 
+		- USB/NORMAL=1 -> USB mode 256/384 fs
+	Base Over-Sampling rate:
+		- BOSR=0 -> Normal mode-ban ez 384fs z "Base Over-Sampling Rate" beállítás a Wolfson WM8731 átalakító átviteli frekvenciáját határozza meg az adott módokban. Az átalakító képes túlmintavételezésre, ami azt jelenti, hogy a bemeneti adatokat többször mintavételezi a kimeneti adatok generálásához.
+	ACD and DAC sample rate control:
+		- SR[3:0]=0111  12MHz órajel mellett
+	Core clock divider select:
+		- CLKIDIV2=0  clk in is MCLK
+	CLKOUT divider select:
+		- CLKODIV2=0  clk out is Core clock
+
+ACTIVE CONTROL: addr=0001001; data=1 active
+
+DIGITAL AUDIO PATH CONTROL: addr=0000101; data=00000
+
+POWER DOWN CONTROL: addr=0000110; data=00000111
+	Line Input Power Down:
+		- LINEINPD=1 Enable Power Down, a bemeneti vonal nincs használva(mikrofon)
+	Microphone Input an Bias Power
+		- MICPD=1 Enalbe Power Down
+	ADC power Down
+		- ADCPD=1 Enable Power Down
+	DAC Power Down:
+		- DACPD=0 Disable Power Down nem engedjük, hogy a dact kikapcsolja
+	Output Power Down
+		- OUTPD=0
+	Oscillator Power Down:
+		- OSCPD=0
+	CLKOUT Power Down:
+		- CLKOUTPD=0
+	POWEROFF mode:
+		-POWEROFF=0
+
+
+RIGHT HEADPHONE OUT: addr=0000011; data=101111001
+
+
+
+RESET REGISTERS: addr=0001111; reset[8:0]=111111111(reset all)
+
+
+
+
