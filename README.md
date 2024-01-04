@@ -17,5 +17,6 @@ This project focuses on the design and implementation of a digital waveform gene
 
 ## Project Structure
 - `docs/`: Documentation and project reports.
-- `rtl/`: Source code for the FPGA implementation and Python control software.
+- `rtl/`: Source code for the FPGA implementation.
+- `gui/`: Source code for Python control software.
 - `tests/`: Test cases and verification files.
